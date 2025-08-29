@@ -2,13 +2,13 @@ header{
     background-color: rgb(132, 108, 151);
     text-align: center;
     font-size: 15px;
-    border: 80px, double black;
+    border: 15px, double black;
 }
 body{
 overflow-x: hidden;
 overflow-y: auto;
 max-width: 100%;
- height: auto;
+height: auto;
 }
 nav {
     grid-area: nav;
