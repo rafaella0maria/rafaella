@@ -2,7 +2,13 @@ header{
     background-color: rgb(132, 108, 151);
     text-align: center;
     font-size: 15px;
-    border: 10px, double black;
+    border: 80px, double black;
+}
+body{
+overflow-x: hidden;
+overflow-y: auto;
+max-width: 100%;
+ height: auto;
 }
 nav {
     grid-area: nav;
@@ -47,7 +53,7 @@ p::first-letter{
 }
 p, pre{
     font-family:'Courier New', Courier, monospace;
-    font-size: 17px;
+    font-size: 15px;
 }
 li{
     font: size 20px;;
