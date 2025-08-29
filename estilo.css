@@ -286,3 +286,7 @@ dl{
   visibility: visible;
   opacity: 1;
 }
+.dedo-pulando {
+  font-size: 20px;
+  display: inline-block;
+}
