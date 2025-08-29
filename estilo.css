@@ -184,9 +184,10 @@ img{
   font-size: 15px;
   font-family:Georgia, 'Times New Roman', Times, serif;
 }
-#texto2{
+#ditado{
   text-align: left;
   margin-bottom: -900%;
+  margin-right: -400px;
 }
 .artista {
   display: flex;
@@ -226,11 +227,11 @@ img{
 #conteudo{
   margin-top: 0,1px;
 }
-pre{
-text-align: right;
-margin-top: 100px;
-margin-right: 5%;
+footer{
+text-align: center;
 font-size: 120%;
+border: 10px, double black;
+background-color: rgb(132, 108, 151);
 }
 #conteudo{
   border: #64008b, 1px;
@@ -289,5 +290,4 @@ dl{
 .container:hover .frase {
   visibility: visible;
   opacity: 1;
-
 }
