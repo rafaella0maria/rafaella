@@ -2,7 +2,7 @@ header{
     background-color: rgb(132, 108, 151);
     text-align: center;
     font-size: 15px;
-    border: 15px, double black;
+    border: 10px, double black;
 }
 body{
 overflow-x: hidden;
@@ -289,4 +289,5 @@ dl{
 .container:hover .frase {
   visibility: visible;
   opacity: 1;
+
 }
