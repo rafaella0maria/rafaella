@@ -1,31 +1,28 @@
 header{
-    background-color: rgb(132, 108, 151);
-    text-align: center;
-    font-size: 15px;
-    border: 10px, double black;
+  background-color: rgb(132, 108, 151);
+  text-align: center;
+  font-size: 15px;
+  border: 10px, double black;
+  position: relative;
 }
 body{
-overflow-x: hidden;
-overflow-y: auto;
-max-width: 100%;
-height: auto;
+ max-width: 100%;
+ height: auto;
+ padding: 0;
+ margin: 0;
 }
 nav {
-    grid-area: nav;
-    background-color: #f2f2f2;
-    padding: 1px;
-    text-align:left;
+  grid-area: nav;
+  background-color: #f2f2f2;
+  padding: 1px;
+  text-align:left;
 }
 main {
-    grid-area: main;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-body, header {
-  margin: 0;
-  padding: 0;
+  grid-area: main;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 #paragrafo:hover{
     color: rgb(140, 136, 143);
@@ -75,10 +72,11 @@ li{
   text-align: center;
   font-size:2em;
 }
- h2{
-    font-family: 'Courier New', Courier, monospace;
-    font-size:20px;
-    color: rgb(88, 71, 104);
+
+h2{
+  font-family: 'Courier New', Courier, monospace;
+  font-size:20px;
+  color: rgb(88, 71, 104);
     text-align: center;
     opacity: 0.5;
  }
@@ -314,10 +312,35 @@ iframe{
   100% { transform: translateX(-50%) rotate(360deg); }
 }
 .disco {
-  width: 150px;
-  height: auto;
-  display: flex;
+  width: 80px;
+  height: 80px;
+  transform-origin: 50% 30%;
+  position: absolute;
+  bottom: -25px;
+  left: 50px;
+  margin-bottom: 70px;
 }
+
+.discoa {
+  width: 80px;
+  height: 80px;
+  transform-origin: 50% 30%;
+  position: absolute;
+  bottom: -25px;
+  left: 50px;
+  margin-bottom: 50px;
+}
+
+.discot {
+  width: 80px;
+  height: 80px;
+  transform-origin: 50% 30%;
+  position: absolute;
+  bottom: -25px;
+  left: 50px;
+  margin-bottom: 40px;
+}
+
 .imagens-lado-a-lado {
   display: flex;
   justify-content: center; 
