@@ -10,6 +10,12 @@ body{
  height: auto;
  padding: 0;
  margin: 0;
+ display: flex;
+ flex-direction: column;
+ align-content: normal;
+ justify-content: space-between;
+ min-height: 100vh;
+ background-color: #e0d7e2;
 }
 nav {
   grid-area: nav;
@@ -77,15 +83,15 @@ h2{
   font-family: 'Courier New', Courier, monospace;
   font-size:20px;
   color: rgb(88, 71, 104);
-    text-align: center;
-    opacity: 0.5;
+  text-align: center;
+  opacity: 0.5;
  }
- a:hover {
-    color: rgb(71, 38, 104);
+a:hover {
+  color: rgb(71, 38, 104);
 }
 
 a:visited {
-    color: rgba(128, 128, 128, 0.034);
+  color: rgba(128, 128, 128, 0.034);
 }
   .seta li a {
   padding-right: 20px;
@@ -138,14 +144,14 @@ img{
   border: #64008b, 5px, solid;
   margin-top: 40px;
 }
-  .item {
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
+.item {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
   }
-  .item .img {
-    display: flex;
-    flex-direction: column;
+.item .img {
+  display: flex;
+  flex-direction: column;
   }
 .texto-mpb::first-letter{
   font-size: 50px;
@@ -181,17 +187,12 @@ img{
   font-size: 15px;
   font-family:Georgia, 'Times New Roman', Times, serif;
 }
-.artista {
+.descricao {
   display: flex;
   flex-direction: row;
   gap: 20px;
   border: 1px;
-}
-.artista img {
   height: auto;
-  
-}
-.descricao {
   flex: 1;
   display: block;
   background-color: #f4f4f4;
@@ -201,8 +202,8 @@ img{
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  margin-top: 2%;
-  margin: 1%;
+  margin-top: 2px;
+  margin: 1px;
 }
 .botao-voltar {
     position: fixed;
@@ -220,10 +221,10 @@ img{
   margin-top: 0,1px;
 }
 footer{
-text-align: center;
-font-size: 120%;
-border: 10px, double black;
-background-color: rgb(132, 108, 151);
+  text-align: center;
+  font-size: 120px;
+  border: 10px, double black;
+  background-color: rgb(132, 108, 151);
 }
 #conteudo{
   border: #64008b, 1px;
@@ -292,8 +293,11 @@ iframe{
   height: 315;
   aspect-ratio: 16 / 9;
 }
-#mensagem{
-  margin: 2%;
+#mensagem:active{
+  text-align: center;
+  margin-left: 150px;
+  border:2px solid blueviolet ;
+  padding: 12px;
 }
 #final{
   margin: 3%;
@@ -301,8 +305,8 @@ iframe{
 .mexendo .f1 {
   position: absolute;
   color: #4c2a57;
-  bottom: 20%;
-  right: 20%;
+  bottom: 25%;
+  right: 5%;
   transform: translateX(50%);
   animation: girar 5s linear infinite;
   font-size: 110%;
@@ -330,7 +334,6 @@ iframe{
   left: 50px;
   margin-bottom: 50px;
 }
-
 .discot {
   width: 80px;
   height: 80px;
@@ -362,8 +365,46 @@ iframe{
   animation: pular 1s infinite;
   display: inline-block;
 }
-@keyframes pular {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
-  100% { transform: translateY(0); }
-}
+  iframe{
+    height: 160px;
+    width: 350px;
+  }
+  button{
+    margin-left: 430px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #a190a5;
+  }
+  #mpb{
+    margin-left: 100px;
+  }iframe{
+    height: 160px;
+    width: 350px;
+  }
+  button{
+    margin-left: 430px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #a190a5;
+  }
+  #mpb{
+    margin-left: 100px;
+  }iframe{
+    height: 160px;
+    width: 350px;
+  }
+  button{
+    margin-left: 430px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #a190a5;
+  }
+  #mpb{
+    margin-left: 100px;
+  }
