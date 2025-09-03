@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="utf-8">
-  <title>Adicional</title>
-  <link rel="stylesheet" href="estilo.css">
-  <link rel="icon" href="principal.jpeg" type="image/png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-  <header>
-    <h1 class="animado">💌 Adicionais!!</h1>
-    <p class="subtitulo">...</p>
-  </header>
-  <a href="index.html" class="botao-voltar">← Voltar</a>
-  <p id="final">Escoli esse tema pois acho Importante sua abordagem, visto que a história do Brasil é vasta e complexa e cheia de desafios. Tanto os anos de chumbo quanto os anos de fama da MPB
-    marcaram nossa história de vida e cultura
-  </p>
-  <section>
-   <h2>LINKS</h2>
-            <dl>
-                <dd><a href="https://www.letras.mus.br/blog/historia-da-mpb/">imagem inicial</a></dd>
-                <dd><a href="https://www.last.fm/pt/music/Elis+Regina/+images/52365149a6714b498f1ac6fb75c1c87b">imagem inicial</a></dd>
-                <dd><a href="https://memoriasindical.com.br/parte-3-ditadura-militar/">imagem Ditadura</a></dd>
-                <dd><a href="https://br.freepik.com/vetores-gratis/desenho-de-disco-brilhante_138418284.htm">imagem disco</a></dd>
-            
-            </dl>
-            </section>
-        </section>
-      <section id="quiz-mpb">
-  <h2>🎤 Quiz MPB: Você conhece mesmo?</h2>
-  <p id="pergunta">Quem canta "Aquarela do Brasil"?</p>
-  <button onclick="verificarResposta('a')">a) Caetano Veloso</button>
-  <button onclick="verificarResposta('b')">b) João Gilberto</button>
-  <button onclick="verificarResposta('c')">c) Elis Regina</button>
-  <p id="feedback"></p>
+  <head>
+    <meta charset="utf-8">
+    <title>Adicional</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="principal.jpeg" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <header>
+      <h1 class="animado">💌 Adicionais!!</h1>
+      <p class="subtitulo">...</p>
+    </header>
+
+    <a href="index.html" class="botao-voltar">← Voltar</a>
+
+    <p id="final">
+      Escolhi esse tema pois acho importante sua abordagem, visto que a história do Brasil é vasta e complexa e cheia de desafios.
+      Tanto os anos de chumbo quanto os anos de fama da MPB marcaram nossa história de vida e cultura.
+    </p>
+
+    <section class="links-mpb">
+  <h2>🔗 LINKS Úteis</h2>
+  <dl>
+    <dd><a href="https://www.letras.mus.br/blog/historia-da-mpb/" target="_blank">🎼 História da MPB usado como fonte</a></dd>
+    <dd><a href="https://www.last.fm/pt/music/Elis+Regina/+images/52365149a6714b498f1ac6fb75c1c87b" target="_blank">🎤 Imagems da Elis Regina</a></dd>
+    <dd><a href="https://memoriasindical.com.br/parte-3-ditadura-militar/" target="_blank">📚  Mais sobre a Ditadura Militar</a></dd>
+  </dl>
 </section>
-  </body>
-   <footer>
-        <p>Agradeço pela Visualizaçao do nosso site! & espero que tenhamos ajudado no seu entendimento sobre o contexto da MPB e sua trajetoria!
-        </p>
+
+
+    <section id="quiz-mpb">
+      <h2>🎤 Agora para finalizarmos um Quiz MPB, para saber se aprendeu mesmo</h2>
+      <p id="pergunta">Qual cantor/cantora de MPB teve seus filhos ameaçados na ditadura?"?</p>
+      <button onclick="verificarResposta('a')">a) Caetano Veloso</button>
+      <button onclick="verificarResposta('b')">b) Elis Regina</button>
+      <button onclick="verificarResposta('c')">c) Ary Barroso</button>
+      <p id="feedback"></p>
+    </section>
+
+    <footer>
+      <p>
+        Agradeço pela visualização do nosso site! Espero que tenhamos ajudado no seu entendimento sobre o contexto da MPB e sua trajetória!
+      </p>
     </footer>
+
+    <script>
+      function verificarResposta(resposta) {
+        const feedback = document.getElementById("feedback");
+        if (resposta === 'b') {
+          feedback.textContent = "✅ Isso aí! Infelizmente isso ocorria muito para cantores MPB.";
+          feedback.style.color = "green";
+        } else {
+          feedback.textContent = "❌ Ops! Tente novamente.";
+          feedback.style.color = "red";
+        }
+      }
+    </script>
+  </body>
 </html>

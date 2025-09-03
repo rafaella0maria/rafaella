@@ -1,39 +1,39 @@
 header{
-    background-color: rgb(132, 108, 151);
-    text-align: center;
-    font-size: 15px;
-    border: 10px, double black;
+  background-color: rgb(133, 105, 143);
+  text-align: center;
+  font-size: 15px;
+  border: 10px, double rgb(12, 8, 11);
 }
 body{
-overflow-x: hidden;
-overflow-y: auto;
-height: auto;
-background-color: #ead2ee;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: auto;
+  background-color: #ececec;
 }
 nav {
-    grid-area: nav;
-    background-color: #f2f2f2;
-    padding: 1px;
-    text-align:left;
+  grid-area: nav;
+  background-color: #f2f2f2;
+  padding: 1px;
+  text-align:left;
 }
 main {
-    grid-area: main;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+  grid-area: main;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 body, header {
   margin: 0;
   padding: 0;
 }
 #paragrafo:hover{
-    color: rgb(140, 136, 143);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
+  color: rgb(140, 136, 143);
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
 }
 strong:hover{
-    color:rgb(131, 119, 133);
+  color:rgb(131, 119, 133);
 }
 .animado {
   animation: flutuar 2s infinite ease-in-out;
@@ -52,8 +52,8 @@ p::first-letter{
   color: #64008b;
 }
 p, pre{
-    font-family:'Courier New', Courier, monospace;
-    font-size: 15px;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 15px;
 }
 li{
     font: size 20px;;
@@ -76,43 +76,99 @@ li{
   font-size:2em;
 }
  h2{
-    font-family: 'Courier New', Courier, monospace;
-    font-size:20px;
-    color: rgb(88, 71, 104);
-    text-align: center;
-    opacity: 0.5;
+  font-family: 'Courier New', Courier, monospace;
+  font-size:20px;
+  color: rgb(88, 71, 104);
+  text-align: center;
+  opacity: 0.5;
  }
- a:hover {
-    color: rgb(71, 38, 104);
+a:hover {
+  color: rgb(71, 38, 104);
 }
 
 a:visited {
-    color: rgba(128, 128, 128, 0.034);
+  color: rgba(128, 128, 128, 0.034);
 }
-  .seta li a {
-  padding-right: 20px;
+.seta li a {
+  padding: 10px 20px;
   text-decoration: none;
-  color: hsl(0, 0%, 20%);
+  color: hsl(272, 54%, 20%);
   font-weight: bold;
   font-size: 17px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 50px;
+  display: inline-block;
+  transition: all 0.3s ease; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.seta li a:hover {
+  background-color: hsl(0, 0%, 80%);
+  color: hsl(0, 0%, 0%);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.seta li a:active {
+  transform: scale(0.98);
 }
 .seta li a::after {
-  content: "→"; 
+  content: '';
   position: absolute;
-  right: 0;
-  top: 0;
-  font-size: 1.2em;
-  color: #684172; 
+  top: 50%;
+  left: 10px;
+  width: 8px;
+  height: 8px;
+  background-color: hsl(0, 100%, 100%);
+  border-radius: 50%;
+  transform: translateY(-50%) scale(0);
   transition: transform 0.3s ease;
+}
+
+.seta li a:hover::after {
+  transform: translateY(-50%) scale(1);
+}
+.mpb-info {
+  max-width: 200px;
+  background-color: #f9f3ec;
+  border-left: 5px solid #d44fd9;
+  padding: 20px;
+  margin-left: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(216, 178, 219, 0.1);
+  transition: transform 0.3s ease;
+}
+.mpb-info:hover {
+  transform: translateY(-5px);
+}
+.mpb-info h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #dd91d3;
+}
+.mpb-info p {
+  font-size: 15px;
+  color: #d2bfda;
+  line-height: 1.5;
+}
+.mpb-info a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #c687cc;
+  font-weight: bold;
+}
+.conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px; 
 }
 .destaque {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   padding: 5px;
   margin-right: 27%;
-  justify-content: space-between;
   gap: 5px;
 }
 .destaque .item {
@@ -371,3 +427,102 @@ iframe{
   font-weight: bold;
   cursor: pointer;
 }
+.microfones-animados {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  pointer-events: none; 
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.microfones-animados span {
+  position: absolute;
+  font-size: 35px;
+  animation: horizontal 6s linear infinite;
+  opacity: 0.8;
+  bottom: 0;
+}
+
+.microfones-animados span:nth-child(1) { top: 10%; animation-delay: 0s; }
+.microfones-animados span:nth-child(2) { top: 30%; animation-delay: 1s; }
+.microfones-animados span:nth-child(3) { top: 50%; animation-delay: 2s; }
+.microfones-animados span:nth-child(4) { top: 70%; animation-delay: 3s; }
+.microfones-animados span:nth-child(5) { top: 90%; animation-delay: 4s; }
+
+@keyframes horizontal {
+  0% {
+    left: 0;
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    transform: translateX(100vw) rotate(360deg);
+    opacity: 0;
+  }
+}
+.links-mpb {
+  background-color: #fdf6f0;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.links-mpb h2 {
+  font-size: 24px;
+  color: #d44fd9;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.links-mpb dl {
+  margin: 0;
+  padding: 0;
+}
+
+.links-mpb dd {
+  margin-bottom: 15px;
+}
+
+.links-mpb a {
+  display: inline-block;
+  background-color: #c1a6c7;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.links-mpb a:hover {
+  background-color: #f0d9f9;
+  color: #751b91;
+  transform: translateX(5px);
+}
+#final {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background-color: #fdf6f0;
+  border-left: 6px solid #99599b;
+  border-radius: 12px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+#final:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+
