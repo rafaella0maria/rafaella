@@ -1,34 +1,32 @@
 header{
-  background-color: rgb(132, 108, 151);
-  text-align: center;
-  font-size: 15px;
-  border: 10px, double black;
-  position: relative;
+    background-color: rgb(132, 108, 151);
+    text-align: center;
+    font-size: 15px;
+    border: 10px, double black;
 }
 body{
- max-width: 100%;
- height: auto;
- padding: 0;
- margin: 0;
- display: flex;
- flex-direction: column;
- align-content: normal;
- justify-content: space-between;
- min-height: 100vh;
- background-color: #e0d7e2;
+overflow-x: hidden;
+overflow-y: auto;
+max-width: 100%;
+height: auto;
+background-color: #ead2ee;
 }
 nav {
-  grid-area: nav;
-  background-color: #f2f2f2;
-  padding: 1px;
-  text-align:left;
+    grid-area: nav;
+    background-color: #f2f2f2;
+    padding: 1px;
+    text-align:left;
 }
 main {
-  grid-area: main;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+    grid-area: main;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+body, header {
+  margin: 0;
+  padding: 0;
 }
 #paragrafo:hover{
     color: rgb(140, 136, 143);
@@ -78,20 +76,19 @@ li{
   text-align: center;
   font-size:2em;
 }
-
-h2{
-  font-family: 'Courier New', Courier, monospace;
-  font-size:20px;
-  color: rgb(88, 71, 104);
-  text-align: center;
-  opacity: 0.5;
+ h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:20px;
+    color: rgb(88, 71, 104);
+    text-align: center;
+    opacity: 0.5;
  }
-a:hover {
-  color: rgb(71, 38, 104);
+ a:hover {
+    color: rgb(71, 38, 104);
 }
 
 a:visited {
-  color: rgba(128, 128, 128, 0.034);
+    color: rgba(128, 128, 128, 0.034);
 }
   .seta li a {
   padding-right: 20px;
@@ -127,7 +124,7 @@ a:visited {
 }
 
 .destaque img {
-  width: 800%;
+  width: 600%;
   height: auto;
   border-radius: 8px;
   margin-right: 5px;
@@ -144,14 +141,14 @@ img{
   border: #64008b, 5px, solid;
   margin-top: 40px;
 }
-.item {
-  display: flex;
-  align-items: center;
-  border-radius: 10px;
+  .item {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
   }
-.item .img {
-  display: flex;
-  flex-direction: column;
+  .item .img {
+    display: flex;
+    flex-direction: column;
   }
 .texto-mpb::first-letter{
   font-size: 50px;
@@ -187,12 +184,17 @@ img{
   font-size: 15px;
   font-family:Georgia, 'Times New Roman', Times, serif;
 }
-.descricao {
+.artista {
   display: flex;
   flex-direction: row;
   gap: 20px;
   border: 1px;
+}
+.artista img {
   height: auto;
+  
+}
+.descricao {
   flex: 1;
   display: block;
   background-color: #f4f4f4;
@@ -202,8 +204,8 @@ img{
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  margin-top: 2px;
-  margin: 1px;
+  margin-top: 2%;
+  margin: 1%;
 }
 .botao-voltar {
     position: fixed;
@@ -221,10 +223,10 @@ img{
   margin-top: 0,1px;
 }
 footer{
-  text-align: center;
-  font-size: 120px;
-  border: 10px, double black;
-  background-color: rgb(132, 108, 151);
+text-align: center;
+font-size: 120%;
+border: 10px, double black;
+background-color: rgb(132, 108, 151);
 }
 #conteudo{
   border: #64008b, 1px;
@@ -273,7 +275,7 @@ dl{
   position: absolute;
   top: 100%;
   text-align: center;
-  background-color: #c0bebc;
+  background-color: #d3a0dd;
   padding: 8px;
   border-radius: 5px;
   transition: opacity 0.3s ease;
@@ -293,57 +295,16 @@ iframe{
   height: 315;
   aspect-ratio: 16 / 9;
 }
-#mensagem:active{
-  text-align: center;
-  margin-left: 150px;
-  border:2px solid blueviolet ;
-  padding: 12px;
+#mensagem{
+  margin: 10px;
 }
 #final{
   margin: 3%;
-}
-.mexendo .f1 {
-  position: absolute;
-  color: #4c2a57;
-  bottom: 25%;
-  right: 5%;
-  transform: translateX(50%);
-  animation: girar 5s linear infinite;
-  font-size: 110%;
 }
 @keyframes girar {
   0%   { transform: translateX(-50%) rotate(0deg); }
   100% { transform: translateX(-50%) rotate(360deg); }
 }
-.disco {
-  width: 80px;
-  height: 80px;
-  transform-origin: 50% 30%;
-  position: absolute;
-  bottom: -25px;
-  left: 50px;
-  margin-bottom: 70px;
-}
-
-.discoa {
-  width: 80px;
-  height: 80px;
-  transform-origin: 50% 30%;
-  position: absolute;
-  bottom: -25px;
-  left: 50px;
-  margin-bottom: 50px;
-}
-.discot {
-  width: 80px;
-  height: 80px;
-  transform-origin: 50% 30%;
-  position: absolute;
-  bottom: -25px;
-  left: 50px;
-  margin-bottom: 40px;
-}
-
 .imagens-lado-a-lado {
   display: flex;
   justify-content: center; 
@@ -365,46 +326,49 @@ iframe{
   animation: pular 1s infinite;
   display: inline-block;
 }
-  iframe{
-    height: 160px;
-    width: 350px;
-  }
-  button{
-    margin-left: 430px;
-    border-radius: 15px;
-    cursor: pointer;
-  }
-  button:hover {
-    background-color: #a190a5;
-  }
-  #mpb{
-    margin-left: 100px;
-  }iframe{
-    height: 160px;
-    width: 350px;
-  }
-  button{
-    margin-left: 430px;
-    border-radius: 15px;
-    cursor: pointer;
-  }
-  button:hover {
-    background-color: #a190a5;
-  }
-  #mpb{
-    margin-left: 100px;
-  }iframe{
-    height: 160px;
-    width: 350px;
-  }
-  button{
-    margin-left: 430px;
-    border-radius: 15px;
-    cursor: pointer;
-  }
-  button:hover {
-    background-color: #a190a5;
-  }
-  #mpb{
-    margin-left: 100px;
-  }
+@keyframes pular {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+.interacao button {
+  border-radius: 50px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #cfb7d8;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.interacao button:hover {
+  transform: scale(1.05); 
+}
+.borda{
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 25px; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+#quiz-mpb {
+  background-color: #fff8e1;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+#quiz-mpb button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffb74d;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
