@@ -7,7 +7,6 @@ header{
 body{
 overflow-x: hidden;
 overflow-y: auto;
-max-width: 100%;
 height: auto;
 background-color: #ead2ee;
 }
